@@ -17,7 +17,7 @@
     " find . -name '*.exec'  ",
     " echo ' ----------------------------------------------' ",
     "./df-build.sh"
-  ],
+  ], 
   "before_install": [],
   "cache": {
     "directories": [
