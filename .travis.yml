@@ -33,9 +33,16 @@
     "sh -c 'cd jOOQ-examples/jOOQ-spring-guice-example && mvn install -DskipTests=true'",
     "sh -c 'cd jOOQ-examples/jOOQ-codegen-gradle && gradle build'"
   ],
+  "script": [
+    "sh -c 'mvn test'",
+    "sh -c 'cd jOOQ-examples/jOOQ-spring-example && mvn test'",
+    "sh -c 'cd jOOQ-examples/jOOQ-spring-boot-example && mvn test'",
+    "sh -c 'cd jOOQ-examples/jOOQ-flyway-example && mvn test'",
+    "sh -c 'cd jOOQ-examples/jOOQ-nashorn-example && mvn test'",
+    "sh -c 'cd jOOQ-examples/jOOQ-spring-guice-example && mvn test'"
+  ],
   "jdk": "oraclejdk8",
   "language": "java",
-  "script": "[\"sh -c 'mvn test'\", \"sh -c 'cd jOOQ-examples/jOOQ-spring-example && mvn test'\", \"sh -c 'cd jOOQ-examples/jOOQ-spring-boot-example && mvn test'\", \"sh -c 'cd jOOQ-examples/jOOQ-flyway-example && mvn test'\", \"sh -c 'cd jOOQ-examples/jOOQ-nashorn-example && mvn test'\", \"sh -c 'cd jOOQ-examples/jOOQ-spring-guice-example && mvn test'\"]",
   "group": "stable",
   "dist": "precise",
   "os": "linux"
